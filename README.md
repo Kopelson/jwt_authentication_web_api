@@ -1,6 +1,6 @@
-# jwt_authentication_web_api
+# Everything Json Web Tokens
 
-JWT Authentication 
+## JWT Authentication 
 
 Web Dev Simplified tutorial
 https://www.youtube.com/watch?v=mbsmsi7l3r4
@@ -28,8 +28,12 @@ Visual Studio Code Extensions
     REST Client
 
 
+How to use jsonwebtoken
+    const jwt = require('jsonwebtoken');
+    jwt.sign(*payload*, *secretKey*)
 
-User Authentication 
+
+## User Authentication 
 
 Web Dev Simplified tutorial
 https://www.youtube.com/watch?v=Ud5xKCYQTjM
@@ -42,8 +46,28 @@ https://www.youtube.com/watch?v=Ud5xKCYQTjM
 - Basic express server setup
 - User login
 
+
 npm packages
     express
     bcrypt
 
     dev dependency - nodemon
+
+How to use bcrypt
+    const bcrypt = require('bcrypt');
+    bcrypt.hash(*password*, *salt*)
+    bcrypt.compare(*req.body.password*, *storedPassword*)
+
+## What is JWT and Why Should You Use JWT?
+
+Web Dev Simplified tutorial
+https://www.youtube.com/watch?v=7Q17ubqLfaM
+
+🧠 Concepts Covered:
+
+- What JWT is
+- JWT vs Session
+- The components of JWT
+- How JWT is secure
+- When you should use JWT
+- The advantages of JWT

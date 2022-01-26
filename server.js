@@ -1,6 +1,9 @@
+require('dotenv').config();
+
 const express = require('express');
 const app = express();
 const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
 
 app.use(express.json());
 
@@ -52,9 +55,14 @@ app.get('/posts', (req, res) => {
     res.json(posts)
 })
 
-app.get('/login', (req, res) => {
+app.post('/login', (req, res) => {
     // Authenticate User
+    
+    const username = req.body.username;
+    const user = {name: username};
 
+    const accessToken = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET)
+    res.json({ accessToken: accessToken })
 })
 
 app.listen(3000);
