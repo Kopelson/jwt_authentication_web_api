@@ -1,5 +1,7 @@
 # jwt_authentication_web_api
 
+JWT Authentication 
+
 Web Dev Simplified tutorial
 https://www.youtube.com/watch?v=mbsmsi7l3r4
 
@@ -19,7 +21,29 @@ npm init
         express
         jsonwebtoken
         dotenv
+        
+        dev dependency - nodemon
 
 Visual Studio Code Extensions
     REST Client
 
+
+
+User Authentication 
+
+Web Dev Simplified tutorial
+https://www.youtube.com/watch?v=Ud5xKCYQTjM
+
+🧠 Concepts Covered:
+
+- What a password salt is
+- How to properly hash a password
+- How to store passwords
+- Basic express server setup
+- User login
+
+npm packages
+    express
+    bcrypt
+
+    dev dependency - nodemon
